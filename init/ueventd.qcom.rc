@@ -628,5 +628,8 @@ subsystem mem_buf_vm
 # IPA Events
 /dev/ipa_events         0660   radio      radio
 
+# Charging
+/sys/class/battchg_ext smart_charging_interruption 0600    system  system
+
 # Touchscreen
 /sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0038 fts_gesture_mode 0600    system  system
