@@ -7,6 +7,11 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
+# pKVM
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+
+PRODUCT_BUILD_PVMFW_IMAGE := true
+
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 35
