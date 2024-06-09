@@ -251,6 +251,9 @@ persist.vendor.sensors.enable.mag_filter=true
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# Update engine
+ro.virtual_ab.compression.threads=true
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=a600000.dwc3
