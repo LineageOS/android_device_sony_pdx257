@@ -7,6 +7,9 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # pKVM
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
