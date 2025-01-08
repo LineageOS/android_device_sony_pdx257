@@ -56,6 +56,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk
+    init.qcom.recovery.rc
 
 # Kernel
 PRODUCT_COPY_FILES += \
