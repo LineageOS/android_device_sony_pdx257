@@ -64,8 +64,16 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.default \
-    fstab.default.vendor_ramdisk
-    init.qcom.recovery.rc
+    fstab.default.vendor_ramdisk \
+    init.class_main.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.rc \
+    init.qcom.recovery.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.target.rc \
+    ueventd.qcom.rc
 
 # Kernel
 PRODUCT_COPY_FILES += \
