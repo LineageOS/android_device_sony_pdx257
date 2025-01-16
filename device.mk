@@ -99,6 +99,23 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+# Overlay
+PRODUCT_PACKAGES += \
+    CarrierConfig-Platform-Overlay \
+    FrameworkRes-Odm-Overlay \
+    FrameworksRes-Esim-Capabilities-Rel16-Overlay \
+    FrameworksResCommon_Sys \
+    FrameworksResTarget_Product \
+    FrameworksResTarget_Vendor \
+    NcmTetheringOverlay \
+    SecureElementResTarget_Vendor \
+    ServiceWifiRes-Elbe-Overlay \
+    SettingsProviderTarget_Product \
+    SettingsResCommon_Sys \
+    SystemUIResCommon_Sys \
+    TelephonyResCommon_Sys \
+    UwbResCommon_Sys
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
