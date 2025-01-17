@@ -145,6 +145,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# eUICC
+PRODUCT_PACKAGES += \
+    SonyEuicc
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
