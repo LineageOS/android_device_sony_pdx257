@@ -1,0 +1,26 @@
+# Audio
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.vendor.qti.va_aosp.support=1
+
+# Charger
+ro.charger.enable_suspend=1
+
+# CNE
+persist.vendor.cne.feature=1
+
+# DPM
+persist.vendor.dpm.feature=11
+
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# NFC
+persist.nfc.debug_enabled=false
+
+# QCC
+vendor.qti.qcc.oper.mode=4

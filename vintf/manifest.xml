@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest version="1.0" type="device" target-level="202404">
+    <hal format="aidl">
+        <name>vendor.somc.hardware.security.aidlsecd</name>
+        <fqname>IDeviceSecurity/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.semc.hardware.spc</name>
+        <fqname>ISpc/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,19 @@
+# Audio
+ro.vendor.qti.va_odm.support=1
+vendor.audio.usb.force.deep_buffer=true
+
+# Bluetoooth
+persist.vendor.qcom.bluetooth.aac_abr_support=true
+
+# Graphics
+ro.surface_flinger.enable_frame_rate_override=0
+
+# LMK
+ro.lmk.critical_available_threshold=18
+
+# RIL
+telephony.lteOnCdmaDevice=0
+
+# SKU
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+import /odm/etc/customization/${ro.boot.hardware.sku}/config.prop
