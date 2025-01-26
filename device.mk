@@ -261,6 +261,15 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 
 PRODUCT_BUILD_PVMFW_IMAGE := true
 
+# Power
+$(call soong_config_set,qtipower,tap_to_wake_node,/sys/bus/i2c/drivers/fts_ts/3-0038/fts_gesture_mode)
+
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/power/config/parrot/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 35
