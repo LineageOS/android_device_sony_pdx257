@@ -43,7 +43,8 @@ BOARD_BOOTCONFIG := \
 
 BOARD_KERNEL_CMDLINE := \
     restrict_cma_redirect=false \
-    video=vfb:640x400,bpp=32,memsize=3072000
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    sysctl.kernel.firmware_config.force_sysfs_fallback=1
 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
