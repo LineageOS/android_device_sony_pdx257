@@ -203,6 +203,8 @@ VENDOR_SECURITY_PATCH := 2026-02-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --prop com.android.build.boot.security_patch:$(VENDOR_SECURITY_PATCH)
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --prop com.android.build.boot.os_version:$(PLATFORM_VERSION_LAST_STABLE)
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_verification_disabled_flag
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
