@@ -433,6 +433,8 @@ subsystem mem_buf_vm
 /sys/kernel/qts/primary/trusted_touch*    0660   system     system
 /sys/kernel/qts/secondary/trusted_touch*  0660   system     system
 
+/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0038/fts_gesture_mode
+
 # Add device block for FRP
 /dev/block/platform/soc/7824900.sdhci/by-name/config    0600   system     system
 /dev/block/platform/soc/7464900.sdhci/by-name/frp       0600   system     system
@@ -622,3 +624,6 @@ subsystem mem_buf_vm
 
 # IPA Events
 /dev/ipa_events         0660   radio      radio
+
+# Touchscreen
+/sys/devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a8c000.i2c/i2c-3/3-0038 fts_gesture_mode 0600    system  system
