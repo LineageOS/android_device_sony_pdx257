@@ -11,6 +11,9 @@ on boot
     wait /sys/class/battchg_ext/smart_charging_activation
     write /sys/class/battchg_ext/smart_charging_activation 1
 
+on charger
+    restart vendor.charger
+
 service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     user oem_2997
     group oem_2997 root
