@@ -207,6 +207,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --prop com.android.build.boot.security_patch
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --prop com.android.build.boot.os_version:$(PLATFORM_VERSION_LAST_STABLE)
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_verification_disabled_flag
+BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
