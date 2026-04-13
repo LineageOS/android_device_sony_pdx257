@@ -569,6 +569,7 @@ vendor/etc/display/graphics_alignments.json
 vendor/etc/display/sdm_display_resolution_extn.xml
 vendor/etc/display/ubwc_alignments.json
 vendor/etc/display/video_alignments.json
+vendor/etc/displayconfig/display_id_4630946521025525378.xml
 
 # Display postprocessing
 vendor/bin/ppd
