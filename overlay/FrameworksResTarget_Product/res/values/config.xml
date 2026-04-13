@@ -136,6 +136,40 @@
         <item>20000</item>
     </integer-array>
 
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. The display brightness is defined as the measured
+         brightness of an all-white image.
+
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>13</item>
+        <item>37</item>
+        <item>43</item>
+        <item>80</item>
+        <item>100</item>
+        <item>100</item>
+        <item>113</item>
+        <item>133</item>
+        <item>143</item>
+        <item>157</item>
+        <item>200</item>
+        <item>343</item>
+        <item>487</item>
+        <item>600</item>
+        <item>720</item>
+        <item>1000</item>
+    </array>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_ambientThresholdLevels. The brightening threshold is calculated as
