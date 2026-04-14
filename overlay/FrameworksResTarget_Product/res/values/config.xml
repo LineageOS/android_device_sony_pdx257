@@ -71,13 +71,13 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.002</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat" format="float">0.002</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
          Set this to 1.0 for maximum brightness range.
          The user is forbidden from setting the brightness above this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMaximumFloat">1.0</item>
+    <item type="dimen" name="config_screenBrightnessSettingMaximumFloat" format="float">1.0</item>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -90,7 +90,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <item type="dimen" name="config_screenBrightnessDimFloat">0.02</item>
+    <item type="dimen" name="config_screenBrightnessDimFloat" format="float">0.02</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
@@ -212,22 +212,18 @@
          OMA-TS-UAProf-V2_0-20060206-A Section 8.1.1.1. If the URL contains a '%s'
          format string then that substring will be replaced with the value of
          Build.MODEL. The format string shall not be escaped. -->
-    <string name="config_useragentprofile_url">http://uaprof.sonymobile.com/%sR01.xml</string>
+    <string name="config_useragentprofile_url" translatable="false">http://uaprof.sonymobile.com/%sR01.xml</string>
 
     <!-- MMS user agent string, for example OemNameDeviceName
          If the string contains a '%s' format string then that substring will be replaced
          with the value of Build.MODEL , ie
          <string name="config_mms_user_agent">OemName%s</string> -->
-    <string name="config_mms_user_agent">Sony%s</string>
+    <string name="config_mms_user_agent" translatable="false">Sony%s</string>
 
     <!-- MMS user agent prolfile url, for example https://uaprof.oem_name.com/DeviceName.xml
          if the string contains a '%s' format string then that substring will be replaced
          with the value of Build.MODEL , ie https://uaprof.oem_name.com/%s.xml -->
-    <string name="config_mms_user_agent_profile_url">@string/config_useragentprofile_url</string>
-
-    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->
-    <bool name="config_showNavigationBar">true</bool>
+    <string name="config_mms_user_agent_profile_url" translatable="false">@string/config_useragentprofile_url</string>
 
     <!-- If supported, are dreams enabled? (by default) -->
     <bool name="config_dreamsEnabledByDefault">false</bool>
@@ -237,10 +233,6 @@
 
     <!-- If supported and enabled, are dreams activated when asleep and charging? (by default) -->
     <bool name="config_dreamsActivatedOnSleepByDefault">true</bool>
-
-    <!-- Control whether the always on display mode is enabled by default. This value will be used
-         during initialization when the setting is still null. -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- User activity timeout: Maximum screen dim duration in milliseconds.
 
@@ -307,7 +299,7 @@
     <bool name="config_safe_media_disable_on_volume_up">false</bool>
 
     <!-- Ims supported call barring MMI code -->
-    <string-array name="config_callBarringMMI_for_ims">
+    <string-array name="config_callBarringMMI_for_ims" translatable="false">
         <item>33</item>
         <item>331</item>
         <item>332</item>
@@ -334,7 +326,7 @@
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage">com.android.wallpaper</string>
+    <string name="config_wallpaperCropperPackage" translatable="false">com.android.wallpaper</string>
 
     <!-- Note: This config is deprecated, use config_pinnerCameraPinBytes instead.
          True if camera app should be pinned via Pinner Service -->
@@ -344,7 +336,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask">M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0</string>
+    <string name="config_icon_mask" translatable="false">M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0</string>
 
     <!-- Default value set for battery percentage in status bar false = disabled, true = enabled -->
     <bool name="config_defaultBatteryPercentageSetting">true</bool>

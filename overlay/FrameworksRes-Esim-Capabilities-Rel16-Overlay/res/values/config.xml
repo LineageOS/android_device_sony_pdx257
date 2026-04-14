@@ -20,7 +20,7 @@
              nr5gc : nr5gcSupportedRelease
              eutran5gc : eutran5gcSupportedRelease
     -->
-    <string-array name="config_telephonyEuiccDeviceCapabilities">
+    <string-array name="config_telephonyEuiccDeviceCapabilities" translatable="false">
         <item>gsm,9</item>
         <item>utran,9</item>
         <item>eutran,16</item>

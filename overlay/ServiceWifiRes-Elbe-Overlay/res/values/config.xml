@@ -66,7 +66,7 @@
     <bool name="config_wifiSoftApDynamicCountryCodeUpdateSupported">true</bool>
 
     <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default">Xperia</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xperia</string>
 
     <!--
     Controls the mapping between RSSI and RSSI levels.
@@ -109,7 +109,7 @@
     <integer name="config_wifiPnoScanIntervalMultiplier">15</integer>
 
     <!-- Carrier specific override for the disable threshold -->
-    <string-array name="config_wifiDisableReasonAuthenticationFailureCarrierSpecificThreshold_carrier_overrides">
+    <string-array name="config_wifiDisableReasonAuthenticationFailureCarrierSpecificThreshold_carrier_overrides" translatable="false">
         <item>:::850:::3</item>
         <item>:::1839:::2</item>
         <item>:::2529:::3</item>
@@ -117,7 +117,7 @@
     </string-array>
 
     <!-- Carrier specific override for the disable duration -->
-    <string-array name="config_wifiDisableReasonAuthenticationFailureCarrierSpecificDurationMs_carrier_overrides">
+    <string-array name="config_wifiDisableReasonAuthenticationFailureCarrierSpecificDurationMs_carrier_overrides" translatable="false">
         <item>:::850:::300000</item>
         <item>:::1839:::14400000</item>
         <item>:::2529:::300000</item>
@@ -128,7 +128,7 @@
     <bool name="config_wifiSaeH2eSupported">true</bool>
 
     <!-- Indicate the prefix of wifi p2p device name, the length should be between 1 ~ 28. -->
-    <string name="config_wifiP2pDeviceNamePrefix">Xperia_</string>
+    <string name="config_wifiP2pDeviceNamePrefix" translatable="false">Xperia_</string>
 
     <!-- Indicates whether or not the WLAN driver supports the NL80211_CMD_REG_CHANGE or
          NL80211_CMD_WIPHY_REG_CHANGE events which indicate the current country code which is
