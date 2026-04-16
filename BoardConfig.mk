@@ -140,6 +140,7 @@ TARGET_KERNEL_EXT_MODULES := \
     semc/hardware/fingerprint/et617 \
     semc/hardware/mmc/core \
     semc/hardware/thermal/tznl_bypass \
+    semc/logger \
     semc/ramdump/kernel-modules/last_logs \
     semc/ramdump/kernel-modules/powerkey_forcecrash \
     semc/ramdump/kernel-modules/ramdump_mem_desc \

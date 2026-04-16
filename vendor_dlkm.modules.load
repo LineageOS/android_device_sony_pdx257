@@ -246,3 +246,4 @@ powerkey_forcecrash.ko
 ramdump_mem_desc.ko
 rdtags.ko
 tznl_bypass.ko
+appslog_kmsg.ko
