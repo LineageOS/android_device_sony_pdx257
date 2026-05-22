@@ -49,3 +49,8 @@ vendor.audio.bt.hearing_protection.ce=true
 
 # Euicc
 masterclear.allow_retain_esim_profiles_after_fdr=true
+
+# RKP
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+remote_provisioning.strongbox.rkp_only=true
