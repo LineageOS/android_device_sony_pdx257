@@ -199,7 +199,7 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/sony/sepolicy/qti/SEPolicy.mk
 
 # Security
-VENDOR_SECURITY_PATCH := 2026-04-01
+VENDOR_SECURITY_PATCH := 2026-06-01
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
