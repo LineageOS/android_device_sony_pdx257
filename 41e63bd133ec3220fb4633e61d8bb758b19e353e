@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "840db1d0_2cf4b7b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2026-06-22T10:44:56Z",
+      "side": 1,
+      "message": "VENDOR_SECURITY_PATCH should be bumped to 2026-06-01 as well.",
+      "revId": "41e63bd133ec3220fb4633e61d8bb758b19e353e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
