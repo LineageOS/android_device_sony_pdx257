@@ -46,8 +46,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('vendor', 'odm'),
     ('system_ext/etc/seccomp_policy/tcmd.policy', 'vendor/etc/seccomp_policy/qsap_qapeservice.policy', 'vendor/etc/seccomp_policy/syshealthmon.policy'): blob_fixup()
         .add_line_if_missing('lseek: 1'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
+    'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     ('vendor/bin/poweropt-service', 'vendor/lib64/hw/libaudioeffecthal.qti.so', 'vendor/lib64/libdpps.so','vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/init/fingerprint-rbs.rc': blob_fixup()
