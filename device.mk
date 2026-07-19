@@ -23,7 +23,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     checkpoint_gc \
-    otapreopt_script
+    otapreopt_script \
+    snapuserd.vendor_ramdisk
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
