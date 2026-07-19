@@ -253,6 +253,7 @@ sys.vendor.shutdown.waittime=500
 
 # Update engine
 ro.virtual_ab.compression.threads=true
+ro.virtual_ab.ublk.enabled=false
 
 # USB
 sys.usb.mtp.batchcancel=1
