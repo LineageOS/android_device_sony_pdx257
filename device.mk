@@ -7,7 +7,7 @@
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # A/B
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+PRODUCT_VIRTUAL_AB_COMPRESSION_FACTOR := 65536
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # AAPT
