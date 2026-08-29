@@ -204,8 +204,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Kernel
-PRODUCT_ENABLE_UFFD_GC := true
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
