@@ -15,6 +15,7 @@ ro.af.client_heap_size_kbyte=7168
 ro.vendor.audio.effect.support_dolby=false
 
 # Bluetooth
+bluetooth.core.le.max_number_of_concurrent_connections=10
 bluetooth.device_id.product_id=6475
 bluetooth.device_id.vendor_id_source=2
 bluetooth.device_id.vendor_id=4046
@@ -35,9 +36,11 @@ bluetooth.profile.opp.enabled=true
 bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.vap.server.enabled=true
 persist.bluetooth.avrcpversion=avrcp16
+persist.bluetooth.bqr.choppy_threshold=9,6
 persist.bluetooth.bqr.event_mask=295006
-persist.bluetooth.bqr.min_interval_ms=500
+persist.bluetooth.bqr.min_interval_ms=60000
 persist.bluetooth.disableinbandringing=false
 persist.bluetooth.iso_link_quality_report=true
 persist.bluetooth.leaudio_offload.disabled=false
