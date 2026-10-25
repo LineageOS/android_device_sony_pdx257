@@ -53,9 +53,6 @@
     <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
     <bool name="config_wifiSoftapHeSuBeamformeeSupported">true</bool>
 
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported">true</bool>
-
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
